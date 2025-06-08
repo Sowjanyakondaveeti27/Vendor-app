@@ -1,0 +1,94 @@
+/* Reset basic layout issues */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Full screen responsive background */
+.login-container {
+  background-image: url('/public/login1.avif'); /* path from public folder */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Responsive login card */
+.login-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+.login-card h2 {
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+/* Optional image inside the card */
+.login-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+/* Form inputs */
+input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Submit button */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive tweaks for smaller screens */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 1.5rem;
+  }
+
+  .login-card h2 {
+    font-size: 1.2rem;
+  }
+
+  input, button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
